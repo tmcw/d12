@@ -8,36 +8,14 @@
 
 d11n - dx spec implementation experiment
 
-example in:
-
-  // Hi
-  function hello() {}
-  // This class is pretty cool
-  class A {
-    // This function is pretty cool
-    b() {}
-  }
-  export {hello, A};
-
-example out:
-
-  export const d11n = new WeakMap(); // D11N
-  // Hi
-  function hello() {}
-  d11n.set(hello, " Hi"); // D11N
-  // This class is pretty cool
-  class A {
-    // This function is pretty cool
-    b() {}
-  }
-  d11n.set(A.prototype.b, " This function is pretty cool"); // D11N
-  d11n.set(A, " This class is pretty cool"); // D11N
-  export {hello, A};
 
 the ideas so far are:
 
 - let javascript itself define hierarchy
 - prioritize runtime documentation access
+- simplify, simplify, simply
+- be opinionated when it helps us simplify
+
 
 deal with later:
 
@@ -45,10 +23,24 @@ deal with later:
 
 
 --------------------------------------------------------------------------------
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
+
 
 speculative future:
 
-- proposal-import-meta may provide a way forward to standardize the way that
-  this information is passed around
+- proposal-import-meta may provide a way forward
+  to standardize the way that this information is
+  passed around
+
+- runtime access ideally relies on a runtime
+  transformation, which is tbd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+non-goals:
+
+- i don't think that i want to support babel
+  anymore. it was fun for a while, but the infinite
+  configurations weigh heavily one me, and on
+  node_modules. i want something with near-zero
+  configuration that can be shared by as many people as
+  possible.
