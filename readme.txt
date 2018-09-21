@@ -8,6 +8,13 @@
 
 d11n - dx spec implementation experiment
 
+| this is an experiment that may or may not
+| become a successor to documentation.js. i want to build
+| a successor to documentation.js, because i think jsdoc's
+| time has passed, the documentation.js approach is
+| complex in certain irreducible ways, and that hosted documentation
+| and dynamic documentation (autocomplete-based) should be
+| solved.
 
 the ideas so far are:
 
@@ -21,6 +28,29 @@ the ideas so far are:
 deal with later:
 
 - documentation format. let's just get basic comments working first.
+
+
+--------------------------------------------------------------------------------
+
+
+                          _______
+                         | ___  o|
+                         |[_-_]_ |
+      ______________     |[_____]|
+     |.------------.|    |[_____]|
+     ||            ||    |[====o]|
+     ||            ||    |[_.--_]|
+     ||            ||    |[_____]|
+     ||            ||    |      :|
+     ||____________||    |      :|
+ .==.|""  ......    |.==.|      :|
+ |::| '-.________.-' |::||      :|
+ |''|  (__________)-.|''||______:|
+ `""`_.............._\""`______
+    /:::::::::::'':::\`;'-.-.  `\
+   /::=========.:.-::"\ \ \--\   \
+   \`""""""""""""""""`/  \ \__)   \
+jgs `""""""""""""""""`    '========'
 
 
 --------------------------------------------------------------------------------
