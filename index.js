@@ -1,14 +1,20 @@
 const rollup = require('rollup');
+const commonjs = require('rollup-plugin-commonjs');
+const nodeResolve = require('rollup-plugin-node-resolve');
 const fs = require('fs');
 const annotatePlugin = require('./annotatePlugin');
 const e = eval;
 
-async function d11n() {
+module.exports = async function d11n(input) {
 
   const docs = new Map();
   const bundle = await rollup.rollup({
-    input: './fixture.js',
-    plugins: [annotatePlugin()]
+    input,
+    plugins: [
+      nodeResolve(),
+      commonjs(),
+      annotatePlugin()
+    ]
   });
   const output = await bundle.generate({
     format: 'iife',
@@ -39,7 +45,5 @@ async function d11n() {
     traverse(exports[key], [key]);
   });
 
-  console.log(docs);
+  return docs;
 }
-
-d11n();
