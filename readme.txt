@@ -11,7 +11,7 @@ d11n - dx spec implementation experiment
 
 the ideas so far are:
 
-- let javascript itself define hierarchy
+- let javascript itself define hierarchy and type
 - prioritize runtime documentation access
 - simplify, simplify, simply
 - be opinionated when it helps us simplify
@@ -34,7 +34,9 @@ speculative future:
 - runtime access ideally relies on a runtime
   transformation, which is tbd
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+--------------------------------------------------------------------------------
+
 
 non-goals:
 
