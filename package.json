@@ -1,0 +1,17 @@
+{
+  "name": "d11n",
+  "version": "1.0.0",
+  "description": "documentation rethought",
+  "main": "index.js",
+  "author": "Tom MacWright",
+  "license": "MIT",
+  "dependencies": {
+    "acorn": "^6.0.1",
+    "acorn-walk": "^6.0.1",
+    "escodegen": "^1.11.0",
+    "esm": "^3.0.84",
+    "magic-string": "^0.25.1",
+    "rollup": "^0.66.2",
+    "rollup-pluginutils": "^2.3.3"
+  }
+}
