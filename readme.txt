@@ -25,6 +25,21 @@ deal with later:
 --------------------------------------------------------------------------------
 
 
+how it works so far:
+
+1. uses rollup to start with an entry point and
+   traverse dependencies
+
+2. uses a transform to associate comments with objects
+   in an exported map
+
+3. traverses the exported surface of the module to
+   produce static documentation
+
+
+--------------------------------------------------------------------------------
+
+
 speculative future:
 
 - proposal-import-meta may provide a way forward
