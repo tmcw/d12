@@ -15,6 +15,7 @@ the ideas so far are:
 - prioritize runtime documentation access
 - simplify, simplify, simply
 - be opinionated when it helps us simplify
+- host early
 
 
 deal with later:
