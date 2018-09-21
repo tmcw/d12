@@ -42,3 +42,13 @@ the ideas so far are:
 deal with later:
 
 - documentation format. let's just get basic comments working first.
+
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+speculative future:
+
+- proposal-import-meta may provide a way forward to standardize the way that
+  this information is passed around

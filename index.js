@@ -77,7 +77,7 @@ rollup.rollup({
     const doc = d11n.get(obj);
     if (doc) docs.set(path, doc);
     try {
-      if (obj !== obj.prototype.constructor) {
+      if (obj.toString().startsWith('class')) {
         const doc = d11n.get(obj.prototype.constructor);
         if (doc) docs.set(path.concat(['prototype', 'constructor']), doc);
       }
