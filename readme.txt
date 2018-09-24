@@ -93,3 +93,19 @@ non-goals:
   node_modules. i want something with near-zero
   configuration that can be shared by as many people as
   possible.
+
+
+--------------------------------------------------------------------------------
+
+
+harsh requirements:
+
+- on the topic of building for the future, i'm building for the future. that
+  means that 'legacy' module formats - including much-loved commonjs -
+  are not particularly well-supported. my expectation is that you set up your
+  modules such that they're consumable to MICROBUNDLE, with the following
+  crucial stipulation:
+
+  > the 'source' field of package.json is a entry point into the raw source
+  > of the module, in es6 format, using only stable features and stage 4 (finalized)
+  > javascript features.

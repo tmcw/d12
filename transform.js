@@ -13,6 +13,7 @@ module.exports = function transform(code) {
   const comments = [];
   const tokens = [];
   const ast = acorn.parse(code, {
+    ecmaVersion: 10,
     sourceType: 'module',
     ranges: true,
     onComment: comments,
