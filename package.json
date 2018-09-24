@@ -1,10 +1,13 @@
 {
   "name": "d11n",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "documentation rethought",
   "main": "index.js",
   "author": "Tom MacWright",
   "license": "MIT",
+  "scripts": {
+    "release": "standard-version"
+  },
   "dependencies": {
     "acorn": "^6.0.1",
     "acorn-walk": "^6.0.1",
@@ -13,6 +16,7 @@
     "rollup": "^0.66.2",
     "rollup-plugin-commonjs": "^9.1.8",
     "rollup-plugin-node-resolve": "^3.4.0",
-    "rollup-pluginutils": "^2.3.3"
+    "rollup-pluginutils": "^2.3.3",
+    "standard-version": "^4.4.0"
   }
 }
