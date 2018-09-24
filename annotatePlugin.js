@@ -12,5 +12,3 @@ module.exports = function annotate(options = {}) {
     }
   };
 }
-
-

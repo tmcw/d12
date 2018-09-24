@@ -18,16 +18,16 @@ module.exports = async function d11n(input) {
   });
   const output = await bundle.generate({
     format: 'iife',
-    name: 'd11nOutput'
+    name: 'd12Output'
   });
-  const {d11n, ...exports} = e(output.code.substring(16));
+  const {d12, ...exports} = e(output.code.substring(15));
 
   function traverse(obj, path) {
-    const doc = d11n.get(obj);
+    const doc = d12.get(obj);
     if (doc) docs.set(path, doc);
     try {
       if (obj.toString().startsWith('class')) {
-        const doc = d11n.get(obj.prototype.constructor);
+        const doc = d12.get(obj.prototype.constructor);
         if (doc) docs.set(path.concat(['prototype', 'constructor']), doc);
       }
     } catch {}
