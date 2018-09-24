@@ -2,10 +2,10 @@ const rollup = require('rollup');
 const commonjs = require('rollup-plugin-commonjs');
 const nodeResolve = require('rollup-plugin-node-resolve');
 const fs = require('fs');
-const annotatePlugin = require('./annotatePlugin');
+const transformPlugin = require('./transformPlugin');
 const e = eval;
 
-module.exports = async function d11n(input) {
+module.exports = async function d12(input) {
 
   const docs = new Map();
   const bundle = await rollup.rollup({
@@ -13,7 +13,7 @@ module.exports = async function d11n(input) {
     plugins: [
       nodeResolve(),
       commonjs(),
-      annotatePlugin()
+      transformPlugin()
     ]
   });
   const output = await bundle.generate({
