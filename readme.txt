@@ -1,12 +1,13 @@
 
-     _ _ _       
-  __| / / |_ __  
- / _` | | | '_ \ 
-| (_| | | | | | |
- \__,_|_|_|_| |_|
+      _ _ ____  
+  __| / |___ \ 
+ / _` | | __) |
+| (_| | |/ __/ 
+ \__,_|_|_____|
+               
                  
 
-d11n - dx spec implementation experiment
+d12 - dx spec implementation experiment
 
 | this is an experiment that may or may not
 | become a successor to documentation.js. i want to build

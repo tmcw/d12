@@ -1,10 +1,10 @@
-const d11n = require('./index');
+const d12 = require('./index');
 const format = require('./format');
 
 const input = process.argv[2];
 
 async function run() {
-  const doc = await d11n(input);
+  const doc = await d12(input);
   console.log(format(doc));
 }
 
