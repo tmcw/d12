@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "acorn": "^6.0.1",
-    "acorn-walk": "^6.0.1",
+    "acorn-walk": "^7.1.1",
     "escodegen": "^1.11.0",
     "magic-string": "^0.25.1",
     "rollup": "^0.66.2",
