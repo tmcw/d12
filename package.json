@@ -10,7 +10,7 @@
     "test": "tap test"
   },
   "dependencies": {
-    "acorn": "^6.0.1",
+    "acorn": "^7.1.1",
     "acorn-walk": "^6.0.1",
     "escodegen": "^1.11.0",
     "magic-string": "^0.25.1",
