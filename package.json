@@ -16,7 +16,7 @@
     "magic-string": "^0.25.1",
     "rollup": "^0.66.2",
     "rollup-plugin-commonjs": "^9.1.8",
-    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-pluginutils": "^2.3.3"
   },
   "devDependencies": {
