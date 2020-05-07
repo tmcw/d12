@@ -20,7 +20,7 @@
     "rollup-pluginutils": "^2.3.3"
   },
   "devDependencies": {
-    "standard-version": "^4.4.0",
+    "standard-version": "^8.0.0",
     "tap": "^12.0.1"
   }
 }
